@@ -1,10 +1,9 @@
 import React from "react";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
-// import Leftbar from "./components/Leftbar/Leftbar";
 
-import Newslist from "./components/Newslist/Newslist";
-import Mainpage from "./components/Mainpage/Mainpage";
-import Newdetail from "./components/Newdetail/Newdetail";
+import Newslist from "./page/Newslist/Newslist";
+import Mainpage from "./page/Mainpage/Mainpage";
+import Newdetail from "./page/Newdetail/Newdetail";
 
 function App() {
   return (

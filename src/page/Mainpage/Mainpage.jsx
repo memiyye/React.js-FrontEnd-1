@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import data from "./../data.json";
+import data from "./../../data.json";
 import { Swiper, SwiperSlide } from "swiper/react";
-import 'swiper/css'
+import 'swiper/css';
 
 function Mainpage() {
     const [pageData, setPageData] = useState(null);
@@ -111,7 +111,7 @@ function Mainpage() {
                         >
                             <div className="flex flex-col items-center">
                                 <div className="text-center text-[50px] font-bold text-gray-200 ">{item.id}</div>
-                                <div className="text-left text-[16px] w-full text-black mt-[-30px] bg-white ">{item.text}</div>
+                                <div className="text-left text-[16px] w-full text-black mt-[-30px] bg-white ">{item.title}</div>
                             </div>
 
 

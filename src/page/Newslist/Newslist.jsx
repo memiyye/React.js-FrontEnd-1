@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import Leftbar from "../Leftbar/Leftbar";
-import data from "./../data.json";
+import data from "./../../data.json";
 import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/css'
+import Leftbar from "../LeftBar/Leftbar";
 
 function Newslist() {
     const [pageData, setPageData] = useState(null);
