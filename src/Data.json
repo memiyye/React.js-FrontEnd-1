@@ -8,9 +8,9 @@
             "id": "01",
             "date": {
                 "created": "1 saat önce",
-                "updated": "1.5 saat önce"
+                "updated": "2.5 saat önce"
             },
-            "title": "ALorem Ipsum dolor sit amet, consectetur adipiscing elit.",
+            "title": "Lorem Ipsum dolor sit amet, consectetur adipiscing elit.",
             "images": "/src/images/2.jpg",
             "detay": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC...",
             "content": [
@@ -55,7 +55,7 @@
                 "updated": "1.5 saat önce"
             },
             "title": "Lorem Ipsum dolor sit amet, consectetur adipiscing elit.",
-            "images": "/src/images/2.jpg",
+            "images": "/src/images/3.jpg",
             "detay": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC...",
             "content": [
                 {
@@ -99,7 +99,7 @@
                 "updated": "1.5 saat önce"
             },
             "title": "ALorem Ipsum dolor sit amet, consectetur adipiscing elit.",
-            "images": "/src/images/2.jpg",
+            "images": "/src/images/1.jpg",
             "detay": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC...",
             "content": [
                 {
