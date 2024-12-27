@@ -64,11 +64,12 @@ function Newslist() {
 
 
                                 <button
-                                    onClick={() => navigate("/newdetail/{id}")}
+                                    onClick={() => navigate(`/newdetail/${item.id}`)}
                                     className="text-[12px] border-2 mt-[10px] px-4 py-1 w-20 font-bold text-black "
                                 >
                                     DETAY
                                 </button>
+
                             </SwiperSlide>
 
                             {(index + 1) % 3 === 0 && index + 1 !== pageData.items.length && (

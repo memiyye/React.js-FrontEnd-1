@@ -6,23 +6,19 @@ import data from "./../../data.json";
 import Leftbar from "../LeftBar/Leftbar";
 
 function Newdetail() {
-    const { id } = useParams(); // URL'deki id parametresini al
-    const navigate = useNavigate(); // Sayfalar arası yönlendirme için kullan
+    const { id } = useParams();  // URL'den id'yi alıyoruz
+    const navigate = useNavigate();
     const [selectedItem, setSelectedItem] = useState(null);
 
     useEffect(() => {
         if (id) {
-            // ID'ye göre öğeyi bul
-            const item = data.items.find((item) => item.id === id);
-            setSelectedItem(item || data.items[0]); // Eğer id bulunamazsa ilk öğeyi seç
-        } else {
-            // Eğer id yoksa ilk öğeye yönlendir
-            navigate(`/Newdetail/${data.items[0].id}`);
+            const item = data.items.find((item) => item.id.toString() === id);  // id'yi eşleştiriyoruz
+            setSelectedItem(item);  // Seçilen öğeyi set ediyoruz
         }
-    }, [id, navigate]);
+    }, [id]);  // id değiştiğinde effect tetiklenir
 
     if (!selectedItem) {
-        return <div>Loading...</div>;
+        return <div>Loading...</div>;  // Öğenin yüklenmesini bekliyoruz
     }
 
     return (
@@ -39,12 +35,11 @@ function Newdetail() {
                     {data.items.map((item) => (
                         <SwiperSlide
                             key={item.id}
-                            className={`flex items-center justify-start p-4 cursor-pointer ${selectedItem?.id === item.id ? "bg-yellow-100" : "bg-transparent"
-                                }`}
+                            className={`flex items-center justify-start p-4 cursor-pointer ${selectedItem?.id === item.id ? "bg-yellow-100" : "bg-transparent"}`}
                         >
                             <button
                                 className="flex flex-col mb-5"
-                                onClick={() => navigate(`/Newdetail/${item.id}`)} // ID'ye göre URL oluştur
+                                onClick={() => navigate(`/newdetail/${item.id}`)}  // ID'ye göre URL'yi güncelleme
                             >
                                 <div className="text-[40px] font-bold text-gray-300">{item.id}</div>
                                 <div className="flex">
